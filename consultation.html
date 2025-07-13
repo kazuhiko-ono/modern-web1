@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人相談サービス - Beyond Learning | オーダーメイドのコーチング</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Beyond Learningの個人相談サービス。あなたの目標達成をサポートするオーダーメイドのコーチング。初回相談は無料です。">
+    <meta name="keywords" content="個人相談,コーチング,コンサルティング,キャリア支援,学習サポート,Beyond Learning">
+    <meta name="author" content="Beyond Learning Support">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-navy': '#2563EB',
+                        'light-blue': '#60A5FA',
+                        'soft-pink': '#F9A8D4',
+                        'light-green': '#86EFAC'
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                    <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                </div>
+                <a href="index.html" class="text-xl font-bold text-soft-navy">Beyond Learning</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-soft-navy transition-colors">ホーム</a>
+                <a href="about.html" class="text-gray-700 hover:text-soft-navy transition-colors">私たちについて</a>
+                <a href="services.html" class="text-gray-700 hover:text-soft-navy transition-colors">サービス</a>
+                <a href="testimonials.html" class="text-gray-700 hover:text-soft-navy transition-colors">実績・お客様の声</a>
+                <a href="faq.html" class="text-gray-700 hover:text-soft-navy transition-colors">よくある質問</a>
+                <a href="contact.html" class="bg-soft-navy text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">お問い合わせ</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-soft-navy"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    個人相談サービス
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                    あなたの目標達成をサポートする<br>
+                    オーダーメイドのコーチング
+                </p>
+                <a href="contact.html#consultation" class="inline-flex items-center space-x-2 bg-soft-navy text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all font-medium">
+                    <span>無料相談を申し込む</span>
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-12">完全個別対応のサポート</h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-soft-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="user" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">完全個別対応</h3>
+                            <p class="text-gray-600">あなたの状況に合わせたオーダーメイドのサポート</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="calendar" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">柔軟なスケジュール</h3>
+                            <p class="text-gray-600">オンライン・対面どちらも対応</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="refresh-cw" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">継続サポート</h3>
+                            <p class="text-gray-600">長期的な成長をサポート</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-gradient-to-r from-soft-navy to-blue-700 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    まずは無料相談から
+                </h2>
+                <p class="text-xl opacity-90 mb-8">
+                    初回相談（60分）は完全無料です
+                </p>
+                <a href="contact.html#consultation" class="inline-flex items-center space-x-2 bg-white text-soft-navy px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-medium">
+                    <span>無料相談を申し込む</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

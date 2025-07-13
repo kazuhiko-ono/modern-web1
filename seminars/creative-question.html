@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリエーティブクエスチョン - 問いが変わる。創造が始まる。| Beyond Learning</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="答えではなく、問いを見つける技術を習得するクリエーティブクエスチョンセミナー。toiee Lab理論に基づいた革新的なワークショップで創造的思考を開発します。">
+    <meta name="keywords" content="クリエーティブクエスチョン,創造的思考,問いの技術,セミナー,ワークショップ,toiee Lab,企画,課題解決">
+    <meta name="author" content="Beyond Learning Support">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="クリエーティブクエスチョン - Beyond Learning">
+    <meta property="og:description" content="問いが変わる。創造が始まる。答えではなく、問いを見つける技術を習得">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-navy': '#2563EB',
+                        'light-blue': '#60A5FA',
+                        'soft-pink': '#F9A8D4',
+                        'light-green': '#86EFAC'
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                    <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                </div>
+                <a href="../index.html" class="text-xl font-bold text-soft-navy">Beyond Learning</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="../index.html" class="text-gray-700 hover:text-soft-navy transition-colors">ホーム</a>
+                <a href="../about.html" class="text-gray-700 hover:text-soft-navy transition-colors">私たちについて</a>
+                <a href="../services.html" class="text-soft-navy font-medium">サービス</a>
+                <a href="../testimonials.html" class="text-gray-700 hover:text-soft-navy transition-colors">実績・お客様の声</a>
+                <a href="../faq.html" class="text-gray-700 hover:text-soft-navy transition-colors">よくある質問</a>
+                <a href="../contact.html" class="bg-soft-navy text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">お問い合わせ</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-soft-navy"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-2">
+                <a href="../index.html" class="block py-2 text-gray-700 hover:text-soft-navy">ホーム</a>
+                <a href="../about.html" class="block py-2 text-gray-700 hover:text-soft-navy">私たちについて</a>
+                <a href="../services.html" class="block py-2 text-soft-navy font-medium">サービス</a>
+                <a href="../testimonials.html" class="block py-2 text-gray-700 hover:text-soft-navy">実績・お客様の声</a>
+                <a href="../faq.html" class="block py-2 text-gray-700 hover:text-soft-navy">よくある質問</a>
+                <a href="../contact.html" class="block py-2 text-soft-navy font-medium">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Breadcrumb -->
+        <div class="bg-gray-50 py-4">
+            <div class="container mx-auto px-4">
+                <nav class="flex space-x-2 text-sm text-gray-600">
+                    <a href="../index.html" class="hover:text-soft-navy">ホーム</a>
+                    <span>></span>
+                    <a href="../services.html" class="hover:text-soft-navy">サービス</a>
+                    <span>></span>
+                    <span class="text-gray-900">クリエーティブクエスチョン</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-soft-pink/10 via-white to-soft-pink/5">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8" data-aos="fade-up">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center space-x-2 bg-soft-pink/20 px-4 py-2 rounded-full">
+                            <div class="w-6 h-6 bg-soft-pink rounded-full flex items-center justify-center">
+                                <i data-lucide="lightbulb" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <span class="text-soft-pink font-medium text-sm">セミナー</span>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                                クリエーティブクエスチョン
+                            </h1>
+                            
+                            <h2 class="text-2xl md:text-3xl text-soft-pink font-medium">
+                                "問いが変わる。創造が始まる。"
+                            </h2>
+                            
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                答えを求めることに慣れすぎた私たちが忘れがちな、<br>
+                                「問い」の持つ創造的な力を再発見しませんか？<br>
+                                適切な問いが、すべての創造の出発点となります。
+                            </p>
+                        </div>
+                        
+                        <!-- Key Info -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="clock" class="w-6 h-6 text-soft-pink mx-auto mb-2"></i>
+                                <div class="text-sm text-gray-600">時間</div>
+                                <div class="font-semibold">4時間</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="users" class="w-6 h-6 text-soft-pink mx-auto mb-2"></i>
+                                <div class="text-sm text-gray-600">定員</div>
+                                <div class="font-semibold">12名</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <i data-lucide="yen-sign" class="w-6 h-6 text-soft-pink mx-auto mb-2"></i>
+                                <div class="text-sm text-gray-600">受講料</div>
+                                <div class="font-semibold">¥35,000</div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="../contact.html#seminar-application" class="inline-flex items-center justify-center space-x-2 bg-soft-pink text-white px-8 py-4 rounded-full hover:bg-pink-500 transition-all font-medium">
+                                <span>今すぐ申し込む</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                            <a href="../contact.html" class="inline-flex items-center justify-center space-x-2 border-2 border-soft-pink text-soft-pink px-8 py-4 rounded-full hover:bg-soft-pink hover:text-white transition-all font-medium">
+                                <span>詳細を相談する</span>
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="relative" data-aos="fade-left" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
+                             alt="創造的思考とアイデア創出" 
+                             class="rounded-2xl shadow-2xl"
+                             loading="lazy">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-soft-pink rounded-full opacity-70 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-light-blue rounded-full opacity-30 animate-bounce"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            セミナー概要
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            このセミナーで何を学び、どのような変化を得られるのかをご紹介します
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- Content -->
+                        <div class="space-y-6" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                なぜ「問い」が重要なのか？
+                            </h3>
+                            
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    私たちは学校教育を通じて「正しい答えを見つける」ことに慣れ親しんできました。しかし、ビジネスや人生の多くの場面では、答えそのものよりも「適切な問いを見つける」ことの方がはるかに重要です。
+                                </p>
+                                
+                                <p>
+                                    良い問いは、新しい視点を生み、創造的な解決策への道を開きます。このセミナーでは、toiee Labの理論に基づいて、創造性を引き出す問いの技術を実践的に学びます。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefits -->
+                        <div class="space-y-6" data-aos="fade-left">
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                得られる効果
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-soft-pink rounded-full flex items-center justify-center mt-1">
+                                        <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">創造的思考力の向上</h4>
+                                        <p class="text-gray-600">固定観念から脱却し、新しいアイデアを生み出す力</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-soft-pink rounded-full flex items-center justify-center mt-1">
+                                        <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">問題解決能力の強化</h4>
+                                        <p class="text-gray-600">複雑な課題を多角的に捉え、解決する技術</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-soft-pink rounded-full flex items-center justify-center mt-1">
+                                        <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">コミュニケーション向上</h4>
+                                        <p class="text-gray-600">適切な問いで相手の思考を促進する技術</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-soft-pink rounded-full flex items-center justify-center mt-1">
+                                        <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">企画・提案力の強化</h4>
+                                        <p class="text-gray-600">魅力的な企画や提案を生み出す思考法</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Content -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            プログラム内容
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            4時間で体験する、創造的な問いの技術
+                        </p>
+                    </div>
+
+                    <!-- Program Steps -->
+                    <div class="space-y-8">
+                        <!-- Step 1 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">1</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold text-gray-900">問いの力を体験する</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        まずは簡単なワークを通じて、「良い問い」と「悪い問い」の違いを体感します。問いが思考や感情に与える影響を実際に体験していただきます。
+                                    </p>
+                                    <div class="text-sm text-gray-500">
+                                        <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>
+                                        60分
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 bg-light-blue rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">2</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold text-gray-900">創造的な問いの作り方</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        toiee Labの理論に基づいた、創造性を引き出す問いの構造と作り方を学びます。様々な種類の問いとその効果について実践的に学習します。
+                                    </p>
+                                    <div class="text-sm text-gray-500">
+                                        <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>
+                                        90分
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 bg-light-green rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">3</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold text-gray-900">実践ワークショップ</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        実際のビジネス課題や個人的な課題を題材に、学んだ技術を実践します。グループワークを通じて、多様な視点から問いを作り上げる体験をします。
+                                    </p>
+                                    <div class="text-sm text-gray-500">
+                                        <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>
+                                        60分
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 bg-soft-navy rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">4</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="text-xl font-bold text-gray-900">統合と実行計画</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        学んだ内容を振り返り、日常やビジネスで活用するための具体的な行動計画を作成します。継続的な実践のためのツールもお渡しします。
+                                    </p>
+                                    <div class="text-sm text-gray-500">
+                                        <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>
+                                        30分
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <!-- Section Header -->
+                    <div class="mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            こんな方におすすめ
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            このセミナーが特に効果的な方々をご紹介します
+                        </p>
+                    </div>
+
+                    <!-- Target Grid -->
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Target 1 -->
+                        <div class="bg-gradient-to-br from-soft-pink/5 to-soft-pink/10 rounded-xl p-8" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="lightbulb" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">企画・マーケティング職</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                新しいアイデアや企画を常に求められる方。創造的な発想力を強化したい方。
+                            </p>
+                        </div>
+
+                        <!-- Target 2 -->
+                        <div class="bg-gradient-to-br from-light-blue/5 to-light-blue/10 rounded-xl p-8" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">チームリーダー</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                チームの創造性を引き出したい方。効果的な会議やブレインストーミングを行いたい方。
+                            </p>
+                        </div>
+
+                        <!-- Target 3 -->
+                        <div class="bg-gradient-to-br from-light-green/5 to-light-green/10 rounded-xl p-8" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-16 h-16 bg-light-green rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="puzzle" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">課題解決に携わる方</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                複雑な問題に取り組む方。新しい視点で課題を捉えたい方。コンサルタントや分析職の方。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            参加者の声
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            実際にセミナーに参加された方々の感想をご紹介します
+                        </p>
+                    </div>
+
+                    <!-- Testimonials Grid -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center space-x-4 mb-6">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" 
+                                     alt="参加者の写真" 
+                                     class="w-16 h-16 rounded-full object-cover"
+                                     loading="lazy">
+                                <div>
+                                    <h4 class="font-bold text-gray-900">田中 悠太さん</h4>
+                                    <p class="text-gray-600 text-sm">マーケティング企画職</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                「今まで『良いアイデアが出ない』と悩んでいましたが、問題は答えを求めすぎていたことだと気づきました。適切な問いを立てることで、チームの発想力が劇的に向上しました。」
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center space-x-4 mb-6">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" 
+                                     alt="参加者の写真" 
+                                     class="w-16 h-16 rounded-full object-cover"
+                                     loading="lazy">
+                                <div>
+                                    <h4 class="font-bold text-gray-900">佐藤 美香さん</h4>
+                                    <p class="text-gray-600 text-sm">プロジェクトマネージャー</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                「会議でいつも同じような議論になっていたのが、問いの技術を使うことで全く違う視点が生まれるようになりました。チームメンバーも積極的に発言するようになりました。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule & Application -->
+        <section class="py-20 bg-gradient-to-r from-soft-pink to-pink-400 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="space-y-8" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold">
+                            開催スケジュール
+                        </h2>
+                        
+                        <!-- Schedule Grid -->
+                        <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-6">
+                                <h3 class="text-xl font-bold mb-4">平日開催</h3>
+                                <div class="space-y-2 text-sm">
+                                    <p>2024年8月15日（木）13:00-17:00</p>
+                                    <p>2024年9月12日（木）13:00-17:00</p>
+                                    <p>2024年10月10日（木）13:00-17:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-6">
+                                <h3 class="text-xl font-bold mb-4">土曜開催</h3>
+                                <div class="space-y-2 text-sm">
+                                    <p>2024年8月24日（土）10:00-14:00</p>
+                                    <p>2024年9月21日（土）10:00-14:00</p>
+                                    <p>2024年10月19日（土）10:00-14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <p class="text-xl opacity-90">
+                                受講料: ¥35,000（税込）<br>
+                                <span class="text-sm opacity-75">※資料代・軽食代込み</span>
+                            </p>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="../contact.html#seminar-application" class="inline-flex items-center justify-center space-x-2 bg-white text-soft-pink px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-medium">
+                                    <span>今すぐ申し込む</span>
+                                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                                </a>
+                                <a href="../contact.html" class="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-soft-pink transition-all font-medium">
+                                    <span>詳細を相談する</span>
+                                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Services -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            関連サービス
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            このセミナーと組み合わせることで、さらに大きな効果が期待できます
+                        </p>
+                    </div>
+
+                    <!-- Related Services Grid -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Related 1 -->
+                        <div class="bg-gray-50 rounded-xl p-8" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mb-6">
+                                <i data-lucide="crown" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">人を育てるリーダーシップ</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                創造的な問いの技術をチーム運営に活用し、メンバーの可能性を引き出すリーダーシップを学びます。
+                            </p>
+                            <a href="leadership.html" class="inline-flex items-center space-x-2 text-soft-navy hover:text-blue-700 font-medium">
+                                <span>詳細を見る</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+
+                        <!-- Related 2 -->
+                        <div class="bg-gray-50 rounded-xl p-8" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-12 h-12 bg-light-green rounded-lg flex items-center justify-center mb-6">
+                                <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">個人相談サービス</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                セミナーで学んだ内容を、あなたの具体的な課題や目標に合わせて個別にサポートいたします。
+                            </p>
+                            <a href="../consultation.html" class="inline-flex items-center space-x-2 text-soft-navy hover:text-blue-700 font-medium">
+                                <span>詳細を見る</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Beyond Learning</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        toiee Lab認定パートナーとして、人本来の学習メカニズムに基づいた革新的な学習支援を提供しています。
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">サイトマップ</h3>
+                    <div class="space-y-2">
+                        <a href="../about.html" class="block text-gray-400 hover:text-white transition-colors">私たちについて</a>
+                        <a href="../services.html" class="block text-gray-400 hover:text-white transition-colors">サービス案内</a>
+                        <a href="../testimonials.html" class="block text-gray-400 hover:text-white transition-colors">実績・お客様の声</a>
+                        <a href="../faq.html" class="block text-gray-400 hover:text-white transition-colors">よくある質問</a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">主要サービス</h3>
+                    <div class="space-y-2">
+                        <a href="creative-question.html" class="block text-gray-400 hover:text-white transition-colors">クリエーティブクエスチョン</a>
+                        <a href="leadership.html" class="block text-gray-400 hover:text-white transition-colors">リーダーシップ研修</a>
+                        <a href="../consultation.html" class="block text-gray-400 hover:text-white transition-colors">個人相談</a>
+                        <a href="../contact.html" class="block text-gray-400 hover:text-white transition-colors">お問い合わせ</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">お問い合わせ</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">info@beyond-learning.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">03-XXXX-XXXX</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">平日 9:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Beyond Learning Support. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">プライバシーポリシー</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">利用規約</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">特定商取引法</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Header Background on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+</html>

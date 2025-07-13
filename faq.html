@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 - Beyond Learning | FAQ・お問い合わせ前にご確認ください</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Beyond Learningのサービスに関するよくある質問をカテゴリ別にまとめました。toiee Labとの関係、セミナー内容、個人相談、料金体系などについて詳しく回答しています。">
+    <meta name="keywords" content="よくある質問,FAQ,toiee Lab,セミナー,個人相談,料金,申し込み方法,Beyond Learning">
+    <meta name="author" content="Beyond Learning Support">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="よくある質問 - Beyond Learning">
+    <meta property="og:description" content="サービスに関するよくある質問をカテゴリ別にまとめました">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-navy': '#2563EB',
+                        'light-blue': '#60A5FA',
+                        'soft-pink': '#F9A8D4',
+                        'light-green': '#86EFAC'
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                    <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                </div>
+                <a href="index.html" class="text-xl font-bold text-soft-navy">Beyond Learning</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-soft-navy transition-colors">ホーム</a>
+                <a href="about.html" class="text-gray-700 hover:text-soft-navy transition-colors">私たちについて</a>
+                <a href="services.html" class="text-gray-700 hover:text-soft-navy transition-colors">サービス</a>
+                <a href="testimonials.html" class="text-gray-700 hover:text-soft-navy transition-colors">実績・お客様の声</a>
+                <a href="faq.html" class="text-soft-navy font-medium">よくある質問</a>
+                <a href="contact.html" class="bg-soft-navy text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">お問い合わせ</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-soft-navy"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-soft-navy">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-soft-navy">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-soft-navy">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-soft-navy">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-soft-navy font-medium">よくある質問</a>
+                <a href="contact.html" class="block py-2 text-soft-navy font-medium">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center space-y-8" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+                        よくある質問
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Beyond Learningのサービスに関するよくある質問を<br>
+                        カテゴリ別にまとめました
+                    </p>
+                    
+                    <!-- Search Box -->
+                    <div class="max-w-2xl mx-auto mt-12">
+                        <div class="relative">
+                            <input type="text" id="faq-search" placeholder="質問を検索..." 
+                                   class="w-full px-6 py-4 pl-14 border border-gray-200 rounded-full focus:ring-2 focus:ring-soft-navy focus:border-transparent text-lg">
+                            <i data-lucide="search" class="w-6 h-6 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Category Navigation -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                        <button onclick="showCategory('all')" class="category-btn active px-6 py-3 rounded-full font-medium transition-all">
+                            すべて
+                        </button>
+                        <button onclick="showCategory('toiee-lab')" class="category-btn px-6 py-3 rounded-full font-medium transition-all">
+                            toiee Labとの関係
+                        </button>
+                        <button onclick="showCategory('seminars')" class="category-btn px-6 py-3 rounded-full font-medium transition-all">
+                            セミナーについて
+                        </button>
+                        <button onclick="showCategory('consultation')" class="category-btn px-6 py-3 rounded-full font-medium transition-all">
+                            個人相談について
+                        </button>
+                        <button onclick="showCategory('payment')" class="category-btn px-6 py-3 rounded-full font-medium transition-all">
+                            申し込み・支払い
+                        </button>
+                        <button onclick="showCategory('other')" class="category-btn px-6 py-3 rounded-full font-medium transition-all">
+                            その他
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- toiee Lab Category -->
+                    <div class="faq-category mb-16" data-category="toiee-lab" data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                            <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="badge-check" class="w-5 h-5 text-white"></i>
+                            </div>
+                            toiee Labとの関係について
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>toiee Lab認定パートナーとは何ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        toiee Lab認定パートナーは、toiee Labが開発した科学的根拠に基づく学習理論を正しく理解し、実践できる能力を持つことを公式に認定された組織です。厳格な審査と継続的な品質管理により、高品質なサービス提供を保証しています。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>toiee Lab Onlineとの違いは何ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        toiee Lab Onlineは理論学習に特化したオンラインプラットフォームです。一方、当社では理論学習で得た知識を実際のワークショップや個人相談を通じて実践に活かすサポートを提供しています。理論と実践を組み合わせることで、より深い学習効果を得ることができます。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>品質はどのように保証されていますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        toiee Lab認定パートナーとして、定期的な品質審査とファシリテーター認定の更新を行っています。また、toiee Labの最新の研究成果を継続的に学習し、サービス内容をアップデートしています。お客様からのフィードバックも品質向上に活用しています。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seminars Category -->
+                    <div class="faq-category mb-16" data-category="seminars" data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                            <div class="w-8 h-8 bg-light-blue rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="users" class="w-5 h-5 text-white"></i>
+                            </div>
+                            セミナーについて
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>セミナーの参加条件はありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        特別な事前知識や経験は必要ありません。学習意欲があり、新しい考え方や手法を取り入れたいと考えている方でしたら、どなたでもご参加いただけます。業界や職種も問いません。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>複数のセミナーを受講することはできますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、複数セミナーの受講を推奨しています。各セミナーは独立していますが、組み合わせることでより大きな効果が期待できます。複数セミナー受講の場合は割引制度もご用意しています。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>欠席した場合の対応はありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        開催日の3日前までにご連絡いただければ、別日程への変更が可能です（同じセミナーの開催がある場合）。当日欠席の場合は、別途個人相談にて内容をフォローアップいたします。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>企業研修として実施できますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、企業様向けの研修プログラムもご提供しています。貴社のニーズに合わせてカスタマイズし、オンサイトでの実施も可能です。詳細は個別にご相談ください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>オンラインでの受講は可能ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        一部のセミナーではオンライン受講も承っています。ただし、グループワークが中心のセミナーは対面での実施を推奨しています。オンライン対応可否はセミナー詳細ページでご確認ください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultation Category -->
+                    <div class="faq-category mb-16" data-category="consultation" data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                            <div class="w-8 h-8 bg-soft-pink rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="user" class="w-5 h-5 text-white"></i>
+                            </div>
+                            個人相談について
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>初回相談は本当に無料ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、初回相談（60分）は完全に無料です。お客様の現状や目標をお聞きし、最適なサポート方法をご提案いたします。無理な営業は一切行いませんので、安心してご利用ください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>どのような相談内容に対応していますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        キャリア設計、学習方法の改善、コミュニケーション向上、リーダーシップ開発、問題解決、意思決定力向上など、幅広いテーマに対応しています。具体的な相談内容について事前にお聞かせください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>相談内容の秘密は守られますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、相談内容については厳格な守秘義務を遵守しています。お客様の同意なく第三者に情報を開示することは一切ありません。安心してお話しください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>継続コーチングの期間はどのくらいですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        一般的には3〜6ヶ月程度をお勧めしていますが、お客様の目標や状況に応じて柔軟に調整いたします。月単位での契約も可能ですので、まずはご相談ください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Category -->
+                    <div class="faq-category mb-16" data-category="payment" data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                            <div class="w-8 h-8 bg-light-green rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="credit-card" class="w-5 h-5 text-white"></i>
+                            </div>
+                            申し込み・支払いについて
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>申し込み方法を教えてください</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Webサイトの申し込みフォームから24時間いつでもお申し込みいただけます。お電話（03-XXXX-XXXX）でのお申し込みも平日9:00-18:00で承っています。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>支払い方法は何がありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        銀行振込、クレジットカード決済（VISA、MasterCard、JCB、AMEX）、PayPalに対応しています。企業様の場合は請求書払いも可能です。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>キャンセル規定について教えてください</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        開催日の7日前まで：全額返金、3日前まで：50%返金、前日・当日：返金不可となります。ただし、やむを得ない事情がある場合は個別にご相談ください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>領収書は発行してもらえますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、領収書の発行が可能です。お申し込み時に「領収書希望」の旨をお知らせください。宛名や但し書きのご指定も承ります。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>割引制度はありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        複数セミナー同時申し込み割引（10%OFF）、リピーター割引（5%OFF）、学生割引（20%OFF）をご用意しています。企業研修の場合は別途割引制度がございます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Category -->
+                    <div class="faq-category mb-16" data-category="other" data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                            <div class="w-8 h-8 bg-gray-600 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-white"></i>
+                            </div>
+                            その他
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>駐車場はありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        申し訳ございませんが、専用駐車場はございません。公共交通機関のご利用をお勧めいたします。近隣にコインパーキングもございますので、お車でお越しの場合はそちらをご利用ください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>アレルギー対応は可能ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、可能な限り対応いたします。お申し込み時にアレルギー情報をお知らせください。軽食やお茶を提供する際に配慮いたします。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>車椅子での参加は可能ですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、会場はバリアフリー対応になっています。事前にお知らせいただければ、席の配置など必要な配慮をいたします。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>資料の配布はありますか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        はい、セミナー当日に資料をお渡しします。復習用の資料やワークシートも含まれています。また、セミナー後にはフォローアップ資料もメールでお送りします。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item bg-white rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-question w-full px-6 py-4 text-left font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex items-center justify-between">
+                                    <span>質問があるときはどこに連絡すればよいですか？</span>
+                                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform"></i>
+                                </button>
+                                <div class="faq-answer hidden px-6 pb-4">
+                                    <p class="text-gray-600 leading-relaxed">
+                                        メール（info@beyond-learning.com）またはお電話（03-XXXX-XXXX、平日9:00-18:00）でお気軽にお問い合わせください。24時間以内にご回答いたします。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="py-20 bg-gradient-to-r from-soft-navy to-blue-700 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-4xl mx-auto space-y-8" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        他にご質問がございますか？
+                    </h2>
+                    <p class="text-xl opacity-90 leading-relaxed">
+                        お気軽にお問い合わせください。<br>
+                        専門スタッフが丁寧にお答えいたします。
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="inline-flex items-center justify-center space-x-2 bg-white text-soft-navy px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-medium">
+                            <span>お問い合わせ</span>
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:03-XXXX-XXXX" class="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-soft-navy transition-all font-medium">
+                            <span>お電話で相談</span>
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Beyond Learning</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        toiee Lab認定パートナーとして、人本来の学習メカニズムに基づいた革新的な学習支援を提供しています。
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">サイトマップ</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-400 hover:text-white transition-colors">私たちについて</a>
+                        <a href="services.html" class="block text-gray-400 hover:text-white transition-colors">サービス案内</a>
+                        <a href="testimonials.html" class="block text-gray-400 hover:text-white transition-colors">実績・お客様の声</a>
+                        <a href="faq.html" class="block text-gray-400 hover:text-white transition-colors">よくある質問</a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">主要サービス</h3>
+                    <div class="space-y-2">
+                        <a href="seminars/creative-question.html" class="block text-gray-400 hover:text-white transition-colors">クリエーティブクエスチョン</a>
+                        <a href="seminars/leadership.html" class="block text-gray-400 hover:text-white transition-colors">リーダーシップ研修</a>
+                        <a href="consultation.html" class="block text-gray-400 hover:text-white transition-colors">個人相談</a>
+                        <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors">お問い合わせ</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">お問い合わせ</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">info@beyond-learning.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">03-XXXX-XXXX</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">平日 9:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Beyond Learning Support. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">プライバシーポリシー</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">利用規約</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">特定商取引法</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Header Background on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
+        });
+        
+        // FAQ Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    answer.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    icon.classList.toggle('rotate-180');
+                    
+                    // Update aria-expanded
+                    const isExpanded = !answer.classList.contains('hidden');
+                    this.setAttribute('aria-expanded', isExpanded);
+                });
+            });
+            
+            // Category Filter
+            window.showCategory = function(category) {
+                // Update active tab
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active', 'bg-soft-navy', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                
+                event.target.classList.add('active', 'bg-soft-navy', 'text-white');
+                event.target.classList.remove('bg-gray-100', 'text-gray-700');
+                
+                // Show/hide categories
+                document.querySelectorAll('.faq-category').forEach(cat => {
+                    if (category === 'all' || cat.getAttribute('data-category') === category) {
+                        cat.style.display = 'block';
+                    } else {
+                        cat.style.display = 'none';
+                    }
+                });
+            };
+            
+            // Search functionality
+            const searchInput = document.getElementById('faq-search');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        // Show parent category
+                        item.closest('.faq-category').style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // If searching, show all categories
+                if (searchTerm) {
+                    document.querySelectorAll('.faq-category').forEach(cat => {
+                        // Check if category has any visible items
+                        const visibleItems = cat.querySelectorAll('.faq-item[style*="block"]');
+                        if (visibleItems.length === 0) {
+                            cat.style.display = 'none';
+                        }
+                    });
+                } else {
+                    // Reset to show all if search is empty
+                    showCategory('all');
+                }
+            });
+            
+            // Initialize first category
+            showCategory('all');
+        });
+        
+        // Style category buttons
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            if (!btn.classList.contains('active')) {
+                btn.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+            }
+        });
+    </script>
+</body>
+</html>

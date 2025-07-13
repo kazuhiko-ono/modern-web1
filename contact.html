@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ・申し込み - Beyond Learning | セミナー申し込み・個人相談予約</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Beyond Learningのセミナー申し込み、個人相談予約、お問い合わせはこちら。無料相談も受け付けています。toiee Lab認定パートナーとして質の高いサービスをご提供いたします。">
+    <meta name="keywords" content="セミナー申し込み,個人相談,お問い合わせ,無料相談,Beyond Learning,toiee Lab">
+    <meta name="author" content="Beyond Learning Support">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="お問い合わせ・申し込み - Beyond Learning">
+    <meta property="og:description" content="セミナー申し込み、個人相談予約、お問い合わせはこちらから">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-navy': '#2563EB',
+                        'light-blue': '#60A5FA',
+                        'soft-pink': '#F9A8D4',
+                        'light-green': '#86EFAC'
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                    <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                </div>
+                <a href="index.html" class="text-xl font-bold text-soft-navy">Beyond Learning</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-soft-navy transition-colors">ホーム</a>
+                <a href="about.html" class="text-gray-700 hover:text-soft-navy transition-colors">私たちについて</a>
+                <a href="services.html" class="text-gray-700 hover:text-soft-navy transition-colors">サービス</a>
+                <a href="testimonials.html" class="text-gray-700 hover:text-soft-navy transition-colors">実績・お客様の声</a>
+                <a href="faq.html" class="text-gray-700 hover:text-soft-navy transition-colors">よくある質問</a>
+                <a href="contact.html" class="bg-soft-navy text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">お問い合わせ</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-soft-navy"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-soft-navy">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-soft-navy">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-soft-navy">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-soft-navy">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-soft-navy">よくある質問</a>
+                <a href="contact.html" class="block py-2 text-soft-navy font-medium">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center space-y-8" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+                        お問い合わせ・申し込み
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        セミナーのお申し込み、個人相談のご予約、その他ご質問など<br>
+                        お気軽にお問い合わせください
+                    </p>
+                    
+                    <!-- Contact Methods -->
+                    <div class="flex flex-wrap justify-center gap-6 mt-12">
+                        <div class="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-sm">
+                            <i data-lucide="phone" class="w-5 h-5 text-soft-navy"></i>
+                            <span class="font-medium">03-XXXX-XXXX</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-sm">
+                            <i data-lucide="mail" class="w-5 h-5 text-soft-navy"></i>
+                            <span class="font-medium">info@beyond-learning.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-sm">
+                            <i data-lucide="clock" class="w-5 h-5 text-soft-navy"></i>
+                            <span class="font-medium">平日 9:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Selection -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Form Tabs -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                        <button onclick="showForm('seminar')" id="seminar-tab" class="tab-btn active px-8 py-3 rounded-full font-medium transition-all">
+                            <i data-lucide="users" class="w-5 h-5 inline mr-2"></i>
+                            セミナー申し込み
+                        </button>
+                        <button onclick="showForm('consultation')" id="consultation-tab" class="tab-btn px-8 py-3 rounded-full font-medium transition-all">
+                            <i data-lucide="user" class="w-5 h-5 inline mr-2"></i>
+                            個人相談予約
+                        </button>
+                        <button onclick="showForm('general')" id="general-tab" class="tab-btn px-8 py-3 rounded-full font-medium transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5 inline mr-2"></i>
+                            一般お問い合わせ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seminar Application Form -->
+        <section id="seminar-form" class="form-section py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">セミナー申し込み</h2>
+                            <p class="text-gray-600">ご希望のセミナーを選択してお申し込みください</p>
+                        </div>
+
+                        <form id="seminar-application-form" class="space-y-8">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="seminar-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                        お名前 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="seminar-name" name="name" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="山田 太郎">
+                                </div>
+                                
+                                <div>
+                                    <label for="seminar-furigana" class="block text-sm font-medium text-gray-700 mb-2">
+                                        フリガナ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="seminar-furigana" name="furigana" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="ヤマダ タロウ">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="seminar-email" class="block text-sm font-medium text-gray-700 mb-2">
+                                        メールアドレス <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="seminar-email" name="email" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="example@email.com">
+                                </div>
+                                
+                                <div>
+                                    <label for="seminar-phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                        電話番号 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" id="seminar-phone" name="phone" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="090-1234-5678">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="seminar-company" class="block text-sm font-medium text-gray-700 mb-2">
+                                    会社名・所属
+                                </label>
+                                <input type="text" id="seminar-company" name="company" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                       placeholder="株式会社〇〇">
+                            </div>
+
+                            <!-- Seminar Selection -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-4">
+                                    希望セミナー <span class="text-red-500">*</span> <span class="text-sm text-gray-500">（複数選択可）</span>
+                                </label>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="creative-question" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">クリエーティブクエスチョン</div>
+                                            <div class="text-sm text-gray-600">¥35,000 / 4時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="leadership" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">人を育てるリーダーシップ</div>
+                                            <div class="text-sm text-gray-600">¥50,000 / 6時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="communication" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">コミュニケーションの本質</div>
+                                            <div class="text-sm text-gray-600">¥42,000 / 5時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="goodself" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">GoodSelfイメージ統合法</div>
+                                            <div class="text-sm text-gray-600">¥38,000 / 4時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="means-purpose" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">手段目的ゲーム</div>
+                                            <div class="text-sm text-gray-600">¥45,000 / 5時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="meta-memory" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">メタ記憶術</div>
+                                            <div class="text-sm text-gray-600">¥32,000 / 4時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="reflection" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">次につながる振り返りの技術</div>
+                                            <div class="text-sm text-gray-600">¥35,000 / 4時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="reading" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">読書が楽しくなる読み方</div>
+                                            <div class="text-sm text-gray-600">¥28,000 / 3時間</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-start space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="checkbox" name="seminars" value="mental-model" class="mt-1">
+                                        <div>
+                                            <div class="font-medium text-gray-900">メンタルモデルとデシジョンメーキング</div>
+                                            <div class="text-sm text-gray-600">¥55,000 / 6時間</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Motivation -->
+                            <div>
+                                <label for="seminar-motivation" class="block text-sm font-medium text-gray-700 mb-2">
+                                    参加の動機・期待すること
+                                </label>
+                                <textarea id="seminar-motivation" name="motivation" rows="4" 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                          placeholder="セミナー参加の動機や期待することをお聞かせください"></textarea>
+                            </div>
+
+                            <!-- Special Requests -->
+                            <div>
+                                <label for="seminar-requests" class="block text-sm font-medium text-gray-700 mb-2">
+                                    特別な配慮やご要望
+                                </label>
+                                <textarea id="seminar-requests" name="requests" rows="3" 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                          placeholder="アレルギー、車椅子対応、その他ご要望があればお聞かせください"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="inline-flex items-center space-x-2 bg-soft-navy text-white px-12 py-4 rounded-full hover:bg-blue-700 transition-all font-medium text-lg">
+                                    <span>申し込みを送信</span>
+                                    <i data-lucide="send" class="w-5 h-5"></i>
+                                </button>
+                                <p class="text-sm text-gray-500 mt-4">
+                                    送信後、担当者より2営業日以内にご連絡いたします
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultation Booking Form -->
+        <section id="consultation-form" class="form-section py-12 bg-gray-50 hidden">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">個人相談予約</h2>
+                            <p class="text-gray-600">あなたの目標達成をサポートする個別相談のご予約</p>
+                        </div>
+
+                        <form id="consultation-booking-form" class="space-y-8">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="consultation-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                        お名前 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="consultation-name" name="name" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="山田 太郎">
+                                </div>
+                                
+                                <div>
+                                    <label for="consultation-email" class="block text-sm font-medium text-gray-700 mb-2">
+                                        メールアドレス <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="consultation-email" name="email" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="example@email.com">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="consultation-phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                        電話番号 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" id="consultation-phone" name="phone" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="090-1234-5678">
+                                </div>
+                                
+                                <div>
+                                    <label for="consultation-occupation" class="block text-sm font-medium text-gray-700 mb-2">
+                                        職業・業界
+                                    </label>
+                                    <input type="text" id="consultation-occupation" name="occupation" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="マーケティング職、経営者など">
+                                </div>
+                            </div>
+
+                            <!-- Consultation Type -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-4">
+                                    相談タイプ <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <label class="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="consultation-type" value="initial" class="text-soft-navy" required>
+                                        <div>
+                                            <div class="font-medium text-gray-900">初回相談</div>
+                                            <div class="text-sm text-gray-600">60分 / 無料</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="consultation-type" value="individual" class="text-soft-navy">
+                                        <div>
+                                            <div class="font-medium text-gray-900">個人セッション</div>
+                                            <div class="text-sm text-gray-600">90分 / ¥15,000</div>
+                                        </div>
+                                    </label>
+
+                                    <label class="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="consultation-type" value="ongoing" class="text-soft-navy">
+                                        <div>
+                                            <div class="font-medium text-gray-900">継続コーチング</div>
+                                            <div class="text-sm text-gray-600">月3回 / ¥40,000</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Preferred Date/Time -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="consultation-date1" class="block text-sm font-medium text-gray-700 mb-2">
+                                        希望日時（第1希望） <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="datetime-local" id="consultation-date1" name="preferred-date-1" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent">
+                                </div>
+                                
+                                <div>
+                                    <label for="consultation-date2" class="block text-sm font-medium text-gray-700 mb-2">
+                                        希望日時（第2希望）
+                                    </label>
+                                    <input type="datetime-local" id="consultation-date2" name="preferred-date-2" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent">
+                                </div>
+                            </div>
+
+                            <!-- Format Preference -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-4">
+                                    実施方法 <span class="text-red-500">*</span>
+                                </label>
+                                <div class="flex flex-wrap gap-4">
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="format" value="online" class="text-soft-navy" required>
+                                        <span>オンライン（Zoom）</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="format" value="in-person" class="text-soft-navy">
+                                        <span>対面（東京・渋谷）</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="format" value="either" class="text-soft-navy">
+                                        <span>どちらでも可</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Consultation Topic -->
+                            <div>
+                                <label for="consultation-topic" class="block text-sm font-medium text-gray-700 mb-2">
+                                    相談したい内容 <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="consultation-topic" name="topic" rows="4" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                          placeholder="どのようなことについて相談したいか、現在の課題や目標などをお聞かせください"></textarea>
+                            </div>
+
+                            <!-- Current Situation -->
+                            <div>
+                                <label for="consultation-background" class="block text-sm font-medium text-gray-700 mb-2">
+                                    現在の状況・背景
+                                </label>
+                                <textarea id="consultation-background" name="background" rows="3" 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                          placeholder="現在の状況や背景について詳しくお聞かせください"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="inline-flex items-center space-x-2 bg-soft-navy text-white px-12 py-4 rounded-full hover:bg-blue-700 transition-all font-medium text-lg">
+                                    <span>予約を送信</span>
+                                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                                </button>
+                                <p class="text-sm text-gray-500 mt-4">
+                                    送信後、24時間以内にスケジュール調整のご連絡をいたします
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- General Inquiry Form -->
+        <section id="general-form" class="form-section py-12 bg-gray-50 hidden">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">一般お問い合わせ</h2>
+                            <p class="text-gray-600">サービスに関するご質問など、お気軽にお問い合わせください</p>
+                        </div>
+
+                        <form id="general-inquiry-form" class="space-y-8">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="general-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                        お名前 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="general-name" name="name" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="山田 太郎">
+                                </div>
+                                
+                                <div>
+                                    <label for="general-email" class="block text-sm font-medium text-gray-700 mb-2">
+                                        メールアドレス <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="general-email" name="email" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="example@email.com">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="general-phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                        電話番号
+                                    </label>
+                                    <input type="tel" id="general-phone" name="phone" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="090-1234-5678">
+                                </div>
+                                
+                                <div>
+                                    <label for="general-company" class="block text-sm font-medium text-gray-700 mb-2">
+                                        会社名・所属
+                                    </label>
+                                    <input type="text" id="general-company" name="company" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                           placeholder="株式会社〇〇">
+                                </div>
+                            </div>
+
+                            <!-- Inquiry Category -->
+                            <div>
+                                <label for="general-category" class="block text-sm font-medium text-gray-700 mb-2">
+                                    お問い合わせ種別 <span class="text-red-500">*</span>
+                                </label>
+                                <select id="general-category" name="category" required 
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent">
+                                    <option value="">選択してください</option>
+                                    <option value="service-info">サービス内容について</option>
+                                    <option value="toiee-lab">toiee Labとの関係について</option>
+                                    <option value="pricing">料金について</option>
+                                    <option value="schedule">スケジュールについて</option>
+                                    <option value="corporate">企業研修について</option>
+                                    <option value="partnership">パートナーシップについて</option>
+                                    <option value="media">取材・メディア関連</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <!-- Subject -->
+                            <div>
+                                <label for="general-subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                    件名 <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="general-subject" name="subject" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                       placeholder="お問い合わせの件名をご入力ください">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="general-message" class="block text-sm font-medium text-gray-700 mb-2">
+                                    お問い合わせ内容 <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="general-message" name="message" rows="6" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-navy focus:border-transparent"
+                                          placeholder="お問い合わせ内容を詳しくお聞かせください"></textarea>
+                            </div>
+
+                            <!-- Preferred Contact Method -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-4">
+                                    希望連絡方法
+                                </label>
+                                <div class="flex flex-wrap gap-4">
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="contact-method" value="email" class="text-soft-navy" checked>
+                                        <span>メール</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="contact-method" value="phone" class="text-soft-navy">
+                                        <span>お電話</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="contact-method" value="either" class="text-soft-navy">
+                                        <span>どちらでも可</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="inline-flex items-center space-x-2 bg-soft-navy text-white px-12 py-4 rounded-full hover:bg-blue-700 transition-all font-medium text-lg">
+                                    <span>お問い合わせを送信</span>
+                                    <i data-lucide="send" class="w-5 h-5"></i>
+                                </button>
+                                <p class="text-sm text-gray-500 mt-4">
+                                    送信後、2営業日以内にご連絡いたします
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <!-- Office Info -->
+                        <div class="space-y-6" data-aos="fade-up">
+                            <h3 class="text-2xl font-bold text-gray-900">アクセス・お問い合わせ先</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-soft-navy mt-1"></i>
+                                    <div>
+                                        <div class="font-medium text-gray-900">所在地</div>
+                                        <div class="text-gray-600">
+                                            〒150-0001<br>
+                                            東京都渋谷区神宮前3-25-18<br>
+                                            THE ICEBERG 6F
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="train" class="w-5 h-5 text-soft-navy mt-1"></i>
+                                    <div>
+                                        <div class="font-medium text-gray-900">最寄り駅</div>
+                                        <div class="text-gray-600">
+                                            JR山手線 原宿駅 徒歩7分<br>
+                                            東京メトロ 表参道駅 徒歩5分
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="clock" class="w-5 h-5 text-soft-navy mt-1"></i>
+                                    <div>
+                                        <div class="font-medium text-gray-900">営業時間</div>
+                                        <div class="text-gray-600">
+                                            平日 9:00-18:00<br>
+                                            土日祝 定休日
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Link -->
+                        <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-2xl font-bold text-gray-900">よくある質問</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="p-6 bg-gray-50 rounded-xl">
+                                    <h4 class="font-medium text-gray-900 mb-2">セミナーの参加条件はありますか？</h4>
+                                    <p class="text-gray-600 text-sm">特別な事前知識は必要ありません。学習意欲のある方でしたらどなたでもご参加いただけます。</p>
+                                </div>
+                                
+                                <div class="p-6 bg-gray-50 rounded-xl">
+                                    <h4 class="font-medium text-gray-900 mb-2">個人相談はオンラインでも可能ですか？</h4>
+                                    <p class="text-gray-600 text-sm">はい、Zoomを使用したオンライン相談も承っております。お気軽にお申し込みください。</p>
+                                </div>
+                                
+                                <div class="p-6 bg-gray-50 rounded-xl">
+                                    <h4 class="font-medium text-gray-900 mb-2">企業研修も対応していますか？</h4>
+                                    <p class="text-gray-600 text-sm">はい、企業様向けの研修プログラムもご用意しております。ご要望に応じてカスタマイズいたします。</p>
+                                </div>
+                            </div>
+                            
+                            <a href="faq.html" class="inline-flex items-center space-x-2 text-soft-navy hover:text-blue-700 font-medium">
+                                <span>その他のよくある質問を見る</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-soft-navy rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Beyond Learning</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        toiee Lab認定パートナーとして、人本来の学習メカニズムに基づいた革新的な学習支援を提供しています。
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">サイトマップ</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-400 hover:text-white transition-colors">私たちについて</a>
+                        <a href="services.html" class="block text-gray-400 hover:text-white transition-colors">サービス案内</a>
+                        <a href="testimonials.html" class="block text-gray-400 hover:text-white transition-colors">実績・お客様の声</a>
+                        <a href="faq.html" class="block text-gray-400 hover:text-white transition-colors">よくある質問</a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">主要サービス</h3>
+                    <div class="space-y-2">
+                        <a href="seminars/creative-question.html" class="block text-gray-400 hover:text-white transition-colors">クリエーティブクエスチョン</a>
+                        <a href="seminars/leadership.html" class="block text-gray-400 hover:text-white transition-colors">リーダーシップ研修</a>
+                        <a href="consultation.html" class="block text-gray-400 hover:text-white transition-colors">個人相談</a>
+                        <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors">お問い合わせ</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">お問い合わせ</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">info@beyond-learning.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">03-XXXX-XXXX</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">平日 9:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Beyond Learning Support. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">プライバシーポリシー</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">利用規約</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">特定商取引法</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Header Background on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
+        });
+        
+        // Form Tab Switching
+        function showForm(formType) {
+            // Hide all forms
+            document.querySelectorAll('.form-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.remove('bg-soft-navy', 'text-white');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            
+            // Show selected form
+            document.getElementById(`${formType}-form`).classList.remove('hidden');
+            
+            // Add active class to selected tab
+            const activeTab = document.getElementById(`${formType}-tab`);
+            activeTab.classList.add('active', 'bg-soft-navy', 'text-white');
+            activeTab.classList.remove('bg-gray-100', 'text-gray-700');
+        }
+        
+        // Initialize first tab
+        document.addEventListener('DOMContentLoaded', () => {
+            showForm('seminar');
+        });
+        
+        // Style tab buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            if (!btn.classList.contains('active')) {
+                btn.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+            }
+        });
+        
+        // Form Validation and Submission
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                const requiredFields = form.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.classList.add('border-red-500');
+                        isValid = false;
+                    } else {
+                        field.classList.remove('border-red-500');
+                    }
+                });
+                
+                if (isValid) {
+                    // Show success message (in real implementation, send to server)
+                    alert('送信いただきありがとうございます。担当者よりご連絡いたします。');
+                    form.reset();
+                } else {
+                    alert('必須項目をすべて入力してください。');
+                }
+            });
+        });
+        
+        // Real-time validation
+        document.querySelectorAll('input[required], textarea[required], select[required]').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (!this.value.trim()) {
+                    this.classList.add('border-red-500');
+                } else {
+                    this.classList.remove('border-red-500');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
