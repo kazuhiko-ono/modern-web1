@@ -10,28 +10,30 @@ Multi-page website for a learning support company (toiee Lab certified partner) 
 
 ```
 /
-├── index.html              # Homepage with hero and service overview
-├── about.html              # Company info and philosophy
-├── services.html           # Services overview page
-├── seminars/               # Individual seminar detail pages
-│   ├── creative-question.html
-│   ├── leadership.html
-│   ├── communication.html
-│   ├── goodself.html
-│   ├── means-purpose.html
-│   ├── meta-memory.html
-│   ├── reflection.html
-│   ├── reading.html
-│   └── mental-model.html
-├── consultation.html       # Individual consultation details
-├── testimonials.html       # Case studies and customer voices
-├── faq.html               # Frequently asked questions
-├── contact.html           # Contact and application forms
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── favicon.ico
+├── public/                 # All website files
+│   ├── index.html          # Homepage with hero and service overview
+│   ├── about.html          # Company info and philosophy
+│   ├── services.html       # Services overview page
+│   ├── seminars/           # Individual seminar detail pages
+│   │   ├── creative-question.html
+│   │   ├── leadership.html
+│   │   ├── communication.html
+│   │   ├── goodself.html
+│   │   ├── means-purpose.html
+│   │   ├── meta-memory.html
+│   │   ├── reflection.html
+│   │   ├── reading.html
+│   │   └── mental-model.html
+│   ├── consultation.html   # Individual consultation details
+│   ├── testimonials.html   # Case studies and customer voices
+│   ├── faq.html           # Frequently asked questions
+│   ├── contact.html       # Contact and application forms
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   └── favicon.ico
+└── CLAUDE.md              # Project documentation
 ```
 
 ## Technology Stack
